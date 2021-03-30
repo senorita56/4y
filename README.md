@@ -12,4 +12,3 @@ gcc -o main -pthread main.c -std=c99
 3. 优化思路：
   1）两级哈希表.一级哈希表的num_buckets=256，数据经过第一次哈希计算放入到不同的哈希表，总共num_threads*num_buckets个哈希表，最后进行合并。
   
-  ![image](https://user-images.githubusercontent.com/57481533/112871241-a5e99980-90f1-11eb-8b8d-413cc6cd3c83.png)
